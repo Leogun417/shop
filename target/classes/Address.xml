@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.shop.model.Address">
+    <insert id="add" parameterType="Address">
+        INSERT INTO t_address (address, phone, postcode, user_id)
+            VALUES (#{address}, #{phone}, #{postcode}, #{user.id})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM t_address
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Address">
+        UPDATE t_address
+        SET address = #{address}, postcode = #{postcode}, phone = #{phone}, user_id = #{user.id}
+        WHERE id = #{id}
+    </update>
+
+    <resultMap id="addressMap" type="Address" autoMapping="true">
+        <id column="address_id" property="id"/>
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="nickname" property="nickname"/>
+            <result column="type" property="type"/>
+        </association>
+    </resultMap>
+    <select id="loadById" parameterType="int" resultMap="addressMap">
+        SELECT *,t2.id AS 'address_id'
+        FROM t_user t1 LEFT JOIN t_address t2
+            ON (t1.id=t2.user_id)
+        WHERE t2.id = #{id}
+    </select>
+
+    <select id="list" parameterType="map" resultType="Address">
+        SELECT *
+        FROM t_address
+        WHERE user_id=#{userId}
+        <if test="sortBy!=null">
+            ORDER BY
+            ${sortBy}
+            <choose>
+                <when test="order!=null">${order}</when>
+                <otherwise>ASC</otherwise>
+            </choose>
+        </if>
+    </select>
+</mapper>

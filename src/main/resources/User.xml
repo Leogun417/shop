@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.shop.model.User">
+    <insert id="add" parameterType="User">
+        INSERT INTO t_user (username, password, nickname, type)
+            VALUES (#{username}, #{password}, #{nickname}, #{type})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM t_user
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="User">
+        UPDATE t_user
+        SET username = #{username}, password = #{password}, nickname = #{nickname}, type = #{type}
+        WHERE id = #{id}
+    </update>
+
+    <resultMap id="userMap" type="User" autoMapping="true">
+        <id column="user_id" property="id"/>
+        <collection property="addrList" ofType="Address">
+            <id column="address_id" property="id"/>
+            <result column="address" property="address"/>
+            <result column="phone" property="phone"/>
+            <result column="postcode" property="postcode"/>
+        </collection>
+    </resultMap>
+    <select id="loadById" parameterType="int" resultMap="userMap">
+        SELECT *,t2.id AS 'address_id'
+        FROM t_user t1 LEFT JOIN t_address t2
+            ON (t1.id=t2.user_id)
+        WHERE t1.id = #{id}
+    </select>
+
+    <select id="loadByUsername" parameterType="string" resultMap="userMap">
+        SELECT *,t2.id AS 'address_id'
+        FROM t_user t1 LEFT JOIN t_address t2
+                ON (t1.id=t2.user_id)
+        WHERE username = #{username}
+    </select>
+
+    <select id="find" parameterType="map" resultType="User">
+        SELECT *
+        FROM t_user
+        <if test="name!=null">
+            WHERE (username LIKE #{name} OR nickname LIKE #{name})
+        </if>
+        <if test="sortBy!=null">
+            ORDER BY
+            ${sortBy}
+            <choose>
+                <when test="order!=null">${order}</when>
+                <otherwise>ASC</otherwise>
+            </choose>
+        </if>
+        LIMIT #{offset}, #{pageSize}
+    </select>
+
+    <select id="findCount" parameterType="map" resultType="int">
+        SELECT COUNT(*)
+        FROM t_user
+        <if test="name!=null">
+            WHERE (username LIKE #{name} OR nickname LIKE #{name})
+        </if>
+    </select>
+
+    <select id="login" parameterType="string" resultType="User">
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
+    </select>
+</mapper>

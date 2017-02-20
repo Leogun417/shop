@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.shop.model.Category">
+    <insert id="add" parameterType="Category">
+        INSERT INTO t_category (name,id)
+            VALUES (#{name}, #{id})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM t_category
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Category">
+        UPDATE t_category
+        SET name=#{name}
+        WHERE id = #{id}
+    </update>
+
+    <select id="loadById" parameterType="int" resultType="Category">
+        SELECT * FROM t_category WHERE id=#{id}
+    </select>
+
+    <select id="list" parameterType="map" resultType="Category">
+        SELECT *
+        FROM t_category
+        <if test="name!=null">
+            WHERE name LIKE #{name}
+        </if>
+    </select>
+</mapper>
