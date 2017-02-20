@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5820576-58ca-4fc8-bd10-3e254aa67854" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,20 +57,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/User.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="185">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <marker date="1487390921126" expanded="true" signature="262:385" ph="INSERT INTO t_user... " />
-                <marker date="1487390921126" expanded="true" signature="454:497" ph="DELETE FROM " />
-                <marker date="1487390921126" expanded="true" signature="567:704" ph="UPDATE t_use... " />
-                <marker date="1487390921126" expanded="true" signature="1221:1359" ph="SELECT *,t2.... t_user" />
-                <marker date="1487390921126" expanded="true" signature="1459:1610" ph="SELECT *,t2.... t_user" />
-                <marker date="1487390921126" expanded="true" signature="1695:2105" ph="SELECT * FRO... t_user" />
-                <marker date="1487390921126" expanded="true" signature="2430:2495" ph="SELECT * FRO... t_user" />
+                <marker date="1487606078563" expanded="true" signature="262:385" ph="INSERT INTO t_user... " />
+                <marker date="1487606078563" expanded="true" signature="454:497" ph="DELETE FROM " />
+                <marker date="1487606078563" expanded="true" signature="567:704" ph="UPDATE t_use... " />
+                <marker date="1487606078563" expanded="true" signature="1221:1359" ph="SELECT *,t2.... t_user" />
+                <marker date="1487606078563" expanded="true" signature="1459:1610" ph="SELECT *,t2.... t_user" />
+                <marker date="1487606078563" expanded="true" signature="1695:2105" ph="SELECT * FRO... t_user" />
+                <marker date="1487606078563" expanded="true" signature="2430:2495" ph="SELECT * FRO... t_user" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGoodDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,16 +171,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addCategory.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addCategory.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -219,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/User.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/Authority.java" />
@@ -259,6 +259,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/User.xml" />
       </list>
     </option>
   </component>
@@ -403,36 +404,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="decorators" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1238,7 +1209,7 @@
       <workItem from="1487417795505" duration="2017000" />
       <workItem from="1487469851989" duration="3698000" />
       <workItem from="1487598381156" duration="296000" />
-      <workItem from="1487598716167" duration="988000" />
+      <workItem from="1487598716167" duration="1694000" />
     </task>
     <servers />
   </component>
@@ -1275,7 +1246,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199682000" />
+    <option name="totallyTimeSpent" value="200388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1359,6 +1330,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -1370,13 +1344,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="92" lean-forward="false" selection-start-line="31" selection-start-column="92" selection-end-line="31" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/ValidateType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1756,17 +1723,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/User.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        <state relative-caret-position="185">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <marker date="1487390921126" expanded="true" signature="262:385" ph="INSERT INTO t_user... " />
-            <marker date="1487390921126" expanded="true" signature="454:497" ph="DELETE FROM " />
-            <marker date="1487390921126" expanded="true" signature="567:704" ph="UPDATE t_use... " />
-            <marker date="1487390921126" expanded="true" signature="1221:1359" ph="SELECT *,t2.... t_user" />
-            <marker date="1487390921126" expanded="true" signature="1459:1610" ph="SELECT *,t2.... t_user" />
-            <marker date="1487390921126" expanded="true" signature="1695:2105" ph="SELECT * FRO... t_user" />
-            <marker date="1487390921126" expanded="true" signature="2430:2495" ph="SELECT * FRO... t_user" />
+            <marker date="1487606078563" expanded="true" signature="262:385" ph="INSERT INTO t_user... " />
+            <marker date="1487606078563" expanded="true" signature="454:497" ph="DELETE FROM " />
+            <marker date="1487606078563" expanded="true" signature="567:704" ph="UPDATE t_use... " />
+            <marker date="1487606078563" expanded="true" signature="1221:1359" ph="SELECT *,t2.... t_user" />
+            <marker date="1487606078563" expanded="true" signature="1459:1610" ph="SELECT *,t2.... t_user" />
+            <marker date="1487606078563" expanded="true" signature="1695:2105" ph="SELECT * FRO... t_user" />
+            <marker date="1487606078563" expanded="true" signature="2430:2495" ph="SELECT * FRO... t_user" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
