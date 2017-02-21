@@ -19,16 +19,17 @@
 <c:if test="${empty loginUser}">
     <a href="user.do?method=registerPage">用户注册</a>&nbsp;&nbsp;
     <a href="user.do?method=loginPage">用户登录</a>&nbsp;&nbsp;
-    <a href="good.do?method=goodsList">浏览商品</a>&nbsp;&nbsp;
+    <a href="good.do?method=goodsPage">浏览商品</a>&nbsp;&nbsp;
 </c:if>
 <c:if test="${not empty loginUser}">
     欢迎登录，${loginUser.nickname}!&nbsp;&nbsp;
-    <a href="good.do?method=goodsList">浏览商品</a>&nbsp;&nbsp;
+    <a href="good.do?method=goodsPage">浏览商品</a>&nbsp;&nbsp;
     <a href="user.do?method=showSelfInfoPage">我的信息</a>&nbsp;&nbsp;
     <a href="user.do?method=updateSelfPage">修改个人信息</a>&nbsp;&nbsp;
     <a href="user.do?method=registerPage">用户注册</a>&nbsp;&nbsp;
     <a href="user.do?method=userList">用户管理</a>&nbsp;&nbsp;
     <a href="category.do?method=categoryList">商品类别管理</a>&nbsp;&nbsp;
+    <a href="good.do?method=goodsList">商品管理</a>&nbsp;&nbsp;
     <a href="user.do?method=logout">退出</a>&nbsp;&nbsp;
 </c:if>
 <hr/>

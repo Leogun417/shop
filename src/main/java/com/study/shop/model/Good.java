@@ -5,11 +5,16 @@ package com.study.shop.model;
  */
 public class Good {
     private int id;
+    @Validate(ValidateType.NOTNULL)
     private String name;
+    @Validate(ValidateType.NOTNULL)
     private double price;
+    @Validate(ValidateType.NOTNULL)
     private int stock;
+    @Validate(ValidateType.NOTNULL)
     private String introduce;
     private Category category;
+    @Validate(ValidateType.NOTNULL)
     private String img;
     private int status;
 

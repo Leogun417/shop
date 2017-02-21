@@ -94,3 +94,4 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('qingmei@qq.com', '123456', '五竹', 1);
 ALTER TABLE t_good ADD status INT;
 SELECT * FROM t_good;
+DELETE FROM t_good;

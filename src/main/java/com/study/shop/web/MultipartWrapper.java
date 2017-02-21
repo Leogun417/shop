@@ -1,5 +1,7 @@
 package com.study.shop.web;
 
+import com.study.shop.model.Good;
+import com.study.shop.util.RequestUtil;
 import org.apache.commons.fileupload.FileItemIterator;
 import org.apache.commons.fileupload.FileItemStream;
 import org.apache.commons.fileupload.FileUploadException;
@@ -76,15 +78,18 @@ public class MultipartWrapper extends HttpServletRequestWrapper {
         if (params.containsKey(fieldName)) {
             String[] strings = params.get(fieldName);
             strings = Arrays.copyOf(strings, strings.length + 1);
-            strings[strings.length - 1] = Streams.asString(inputStream);
+            strings[strings.length - 1] = Streams.asString(inputStream, "UTF-8");
             params.put(fieldName, strings);
         } else {
-            params.put(fieldName, new String[]{Streams.asString(inputStream)});
+            params.put(fieldName, new String[]{Streams.asString(inputStream, "UTF-8")});
         }
     }
 
     @Override
     public String getParameter(String name) {
+        if (params.get(name) == null) {
+            return null;
+        }
         return params.get(name)[0];
     }
 
@@ -95,6 +100,9 @@ public class MultipartWrapper extends HttpServletRequestWrapper {
 
     @Override
     public String[] getParameterValues(String name) {
+        if (params == null) {
+            return null;
+        }
         return params.get(name);
     }
 }

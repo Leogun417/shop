@@ -3,6 +3,7 @@ package com.study.shop.web;
 import com.study.shop.model.SystemContext;
 import com.study.shop.model.User;
 import com.study.shop.util.DaoUtil;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,9 @@ public class BaseServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         DaoUtil.inject(this);
+        if (ServletFileUpload.isMultipartContent(req)) {
+            req = new MultipartWrapper(req);
+        }
         String methodName = req.getParameter("method");
         try {
             Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);

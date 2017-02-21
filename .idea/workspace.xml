@@ -2,9 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5820576-58ca-4fc8-bd10-3e254aa67854" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsPage.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/AddressDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/AddressDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/BaseDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/BaseDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/CategoryDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/CategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IAddressDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IAddressDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/ICategoryDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/ICategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IDaoFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IDaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IUserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/IUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/MySqlDaoFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/MySqlDaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Address.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Address.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Category.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Category.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/DaoInject.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/DaoInject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Good.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Good.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Order.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Pager.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Pager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/ShopCart.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/ShopCart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/ShopException.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/ShopException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/SystemContext.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/SystemContext.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Validate.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Validate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/ValidateType.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/ValidateType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/util/DaoUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/util/DaoUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/util/MyBatisUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/util/MyBatisUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/util/PropertiesUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/util/RequestUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/util/RequestUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/AddressServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/AddressServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/Authority.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/Authority.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/BaseServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/BaseServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/CategoryServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/CategoryServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/CharFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/CharFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/GoodServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/GoodServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/PagerFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/PagerFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/UserServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/UserServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop.war" afterPath="$PROJECT_DIR$/target/shop.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/AddressDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/AddressDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/BaseDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/BaseDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/CategoryDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/CategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IAddressDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IAddressDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/ICategoryDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/ICategoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IDaoFactory.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IDaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IUserDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/IUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/MySqlDaoFactory.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/MySqlDaoFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Address.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Address.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Category.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Category.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/DaoInject.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/DaoInject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Good.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Good.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Order.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Order.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Pager.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Pager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ShopCart.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ShopCart.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ShopException.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ShopException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/SystemContext.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/SystemContext.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/User.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Validate.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Validate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ValidateType.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/ValidateType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/DaoUtil.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/DaoUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/MyBatisUtil.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/MyBatisUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/PropertiesUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/RequestUtil.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/util/RequestUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/AddressServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/AddressServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/Authority.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/Authority.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/BaseServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/BaseServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/CategoryServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/CategoryServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/CharFilter.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/CharFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/GoodServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/GoodServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/PagerFilter.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/PagerFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/UserServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/UserServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestAddressDao.class" afterPath="$PROJECT_DIR$/target/test-classes/TestAddressDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestUserDao.class" afterPath="$PROJECT_DIR$/target/test-classes/TestUserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop.iml" afterPath="$PROJECT_DIR$/shop.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Good.xml" afterPath="$PROJECT_DIR$/src/main/resources/Good.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao.properties" afterPath="$PROJECT_DIR$/src/main/resources/dao.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/sql/tables.sql" afterPath="$PROJECT_DIR$/src/main/sql/tables.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao.properties" afterPath="$PROJECT_DIR$/target/classes/dao.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/dao.properties" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/dao.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/mybatis.xml" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/mybatis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/decorators/decorator.jsp" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/decorators/decorator.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/goodsList.jsp" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/goodsList.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,12 +130,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IGoodDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java">
+      <file leaf-file-name="addGood.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            <state relative-caret-position="836">
+              <caret line="53" column="122" lean-forward="false" selection-start-line="53" selection-start-column="122" selection-end-line="53" selection-end-column="122" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,39 +155,38 @@
       <file leaf-file-name="GoodDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <marker date="1487648437050" expanded="true" signature="774:998" ph="{...}" />
-                <marker date="1487648437050" expanded="true" signature="1507:1766" ph="{...}" />
-              </folding>
+            <state relative-caret-position="631">
+              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipartWrapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java">
+      <file leaf-file-name="goodsList.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
-                <element signature="e#3592#3593#0" expanded="true" />
-                <element signature="e#3660#3661#0" expanded="true" />
-                <element signature="e#3689#3690#0" expanded="true" />
-                <element signature="e#3758#3759#0" expanded="true" />
-                <element signature="e#3797#3798#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="419">
+              <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tables.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/sql/tables.sql">
+      <file leaf-file-name="userList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="154">
+              <caret line="49" column="30" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="49" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Pager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -96,54 +195,25 @@
       <file leaf-file-name="Good.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Good.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="236">
+              <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
               <folding>
-                <marker date="1487647005794" expanded="true" signature="262:432" ph="INSERT INTO t_good... " />
-                <marker date="1487647005794" expanded="true" signature="501:544" ph="DELETE FROM " />
-                <marker date="1487647005794" expanded="true" signature="614:824" ph="UPDATE t_Goo... " />
-                <marker date="1487647005794" expanded="true" signature="1289:1576" ph="SELECT *, t1... t_good" />
-                <marker date="1487647005794" expanded="true" signature="1661:2096" ph="SELECT * FRO... t_good" />
+                <marker date="1487692460648" expanded="true" signature="262:432" ph="INSERT INTO t_good... " />
+                <marker date="1487692460648" expanded="true" signature="501:544" ph="DELETE FROM " />
+                <marker date="1487692460648" expanded="true" signature="614:824" ph="UPDATE t_Goo... " />
+                <marker date="1487692460648" expanded="true" signature="1289:1576" ph="SELECT *, t1... t_good" />
+                <marker date="1487692460648" expanded="true" signature="1661:2184" ph="SELECT * FRO... t_good" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Good.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java">
+      <file leaf-file-name="pager.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/pager.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-              <folding>
-                <element signature="e#453#454#0" expanded="false" />
-                <element signature="e#478#479#0" expanded="false" />
-                <element signature="e#511#512#0" expanded="false" />
-                <element signature="e#539#540#0" expanded="false" />
-                <element signature="e#570#571#0" expanded="false" />
-                <element signature="e#597#598#0" expanded="false" />
-                <element signature="e#637#638#0" expanded="false" />
-                <element signature="e#669#670#0" expanded="false" />
-                <element signature="e#701#702#0" expanded="false" />
-                <element signature="e#729#730#0" expanded="false" />
-                <element signature="e#771#772#0" expanded="false" />
-                <element signature="e#805#806#0" expanded="false" />
-                <element signature="e#834#835#0" expanded="false" />
-                <element signature="e#862#863#0" expanded="false" />
-                <element signature="e#901#902#0" expanded="false" />
-                <element signature="e#935#936#0" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#1003#1004#0" expanded="false" />
-                <element signature="e#1053#1054#0" expanded="false" />
-                <element signature="e#1095#1096#0" expanded="false" />
-                <element signature="e#1132#1133#0" expanded="false" />
-                <element signature="e#1163#1164#0" expanded="false" />
-                <element signature="e#1213#1214#0" expanded="false" />
-                <element signature="e#1253#1254#0" expanded="false" />
-                <element signature="e#1283#1284#0" expanded="false" />
-                <element signature="e#1309#1310#0" expanded="false" />
-                <element signature="e#1347#1348#0" expanded="false" />
-                <element signature="e#1377#1378#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-117">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +226,9 @@
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -194,21 +264,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/js/formValidate.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/Authority.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateUserPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateSelf.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateUser.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/selfInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/userUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/util/DaoUtil.java" />
@@ -220,7 +284,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/model/Address.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/errors.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addAddress.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/AddressDao.java" />
         <option value="$PROJECT_DIR$/src/main/test/TestAddressDao.java" />
@@ -234,17 +297,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/AddressServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/AddressServlet.java.rej" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/User.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/CategoryDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/sql/tables.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Good.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/CharFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/sql/tables.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Good.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp" />
       </list>
     </option>
   </component>
@@ -358,7 +428,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -416,6 +485,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="decorators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,18 +688,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jsp" />
@@ -586,21 +742,22 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\shop\src\main\webapp\WEB-INF\includes" />
+      <recent name="D:\java\shop\src\main\resources" />
+      <recent name="D:\java\shop\src\main" />
+      <recent name="D:\java\shop" />
+      <recent name="D:\java\shop\src\main\webapp\WEB-INF" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\shop\src\main\webapp\WEB-INF" />
       <recent name="D:\java\shop\src\main\webapp\js" />
       <recent name="D:\java\shop\src\main\webapp" />
       <recent name="D:\java\shop\src\main\resources" />
       <recent name="D:\java\shop\src\main\java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\shop\src\main\resources" />
-      <recent name="D:\java\shop\src\main" />
-      <recent name="D:\java\shop" />
-      <recent name="D:\java\shop\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat8">
@@ -1243,7 +1400,9 @@
       <workItem from="1487469851989" duration="3698000" />
       <workItem from="1487598381156" duration="296000" />
       <workItem from="1487598716167" duration="2038000" />
-      <workItem from="1487641590794" duration="11878000" />
+      <workItem from="1487641590794" duration="12530000" />
+      <workItem from="1487669803713" duration="1844000" />
+      <workItem from="1487678224192" duration="12752000" />
     </task>
     <task id="LOCAL-00001" summary="创建IGoodDao接口">
       <created>1487606169622</created>
@@ -1259,7 +1418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487648578057</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成MultiPartWrapper类，实现对request请求的包装">
+      <created>1487657762516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1487657762516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1295,7 +1461,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212610000" />
+    <option name="totallyTimeSpent" value="227858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1361,7 +1527,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33814102" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33814102" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1400,7 +1566,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建IGoodDao接口" />
     <MESSAGE value="完成goodDao喝good类sql语句的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成goodDao喝good类sql语句的配置" />
+    <MESSAGE value="完成MultiPartWrapper类，实现对request请求的包装" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成MultiPartWrapper类，实现对request请求的包装" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1413,108 +1580,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="30" column="120" lean-forward="false" selection-start-line="30" selection-start-column="120" selection-end-line="30" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addAddress.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="39" column="6" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/TestAddressDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/updateAddress.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/userInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="63" column="72" lean-forward="false" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/selfInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/util/RequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/util/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/CharFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/AddressServlet.java.rej" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/AddressServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="51" column="33" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="55" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/PagerFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2024">
@@ -1570,13 +1636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -1600,22 +1659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addCategory.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1628,14 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1658,14 +1693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1754,67 +1781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/sql/tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#478#479#0" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#539#540#0" expanded="false" />
-            <element signature="e#570#571#0" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#637#638#0" expanded="false" />
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#701#702#0" expanded="false" />
-            <element signature="e#729#730#0" expanded="false" />
-            <element signature="e#771#772#0" expanded="false" />
-            <element signature="e#805#806#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#862#863#0" expanded="false" />
-            <element signature="e#901#902#0" expanded="false" />
-            <element signature="e#935#936#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
-            <element signature="e#1053#1054#0" expanded="false" />
-            <element signature="e#1095#1096#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1213#1214#0" expanded="false" />
-            <element signature="e#1253#1254#0" expanded="false" />
-            <element signature="e#1283#1284#0" expanded="false" />
-            <element signature="e#1309#1310#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1377#1378#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/AddressDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1826,44 +1792,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Good.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/AddressServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-          <folding>
-            <marker date="1487647005794" expanded="true" signature="262:432" ph="INSERT INTO t_good... " />
-            <marker date="1487647005794" expanded="true" signature="501:544" ph="DELETE FROM " />
-            <marker date="1487647005794" expanded="true" signature="614:824" ph="UPDATE t_Goo... " />
-            <marker date="1487647005794" expanded="true" signature="1289:1576" ph="SELECT *, t1... t_good" />
-            <marker date="1487647005794" expanded="true" signature="1661:2096" ph="SELECT * FRO... t_good" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <marker date="1487648437050" expanded="true" signature="774:998" ph="{...}" />
-            <marker date="1487648437050" expanded="true" signature="1507:1766" ph="{...}" />
-          </folding>
+        <state relative-caret-position="132">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/IGoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/新建文本文档.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/CharFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/PagerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="-167">
+          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1376">
+          <caret line="64" column="63" lean-forward="false" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/util/RequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="86" column="20" lean-forward="false" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="53" column="122" lean-forward="false" selection-start-line="53" selection-start-column="122" selection-end-line="53" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/]JG[GS8IFA~SIABVX9_V_@1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Good.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+          <folding>
+            <marker date="1487692460648" expanded="true" signature="262:432" ph="INSERT INTO t_good... " />
+            <marker date="1487692460648" expanded="true" signature="501:544" ph="DELETE FROM " />
+            <marker date="1487692460648" expanded="true" signature="614:824" ph="UPDATE t_Goo... " />
+            <marker date="1487692460648" expanded="true" signature="1289:1576" ph="SELECT *, t1... t_good" />
+            <marker date="1487692460648" expanded="true" signature="1661:2184" ph="SELECT * FRO... t_good" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/includes/pager.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/sql/tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="95" column="17" lean-forward="false" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-            <element signature="e#3592#3593#0" expanded="true" />
-            <element signature="e#3660#3661#0" expanded="true" />
-            <element signature="e#3689#3690#0" expanded="true" />
-            <element signature="e#3758#3759#0" expanded="true" />
-            <element signature="e#3797#3798#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="43" column="62" lean-forward="false" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -62,7 +62,7 @@ public class UserServlet extends BaseServlet {
             req.setAttribute("e", se.getMessage());
             return "login.jsp";
         }
-        return BaseServlet.redirect + "good.do?method=goodsList";
+        return BaseServlet.redirect + "good.do?method=goodsPage";
     }
 
     @Authority("all")

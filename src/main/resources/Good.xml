@@ -43,9 +43,11 @@
     <select id="find" parameterType="map" resultType="Good">
         SELECT *
         FROM t_good
-        <if test="name!=null and categoryId !=null">
-            WHERE (name LIKE #{name} AND category_id = #{categoryId})
-        </if>
+        <where>
+            <if test="name != null">name LIKE #{name}</if>
+            <if test="categoryId != null">category_id=#{categoryId}</if>
+            <if test="status != null">status=#{status}</if>
+        </where>
         <if test="sortBy!=null">
             ORDER BY
             ${sortBy}
@@ -60,8 +62,10 @@
     <select id="findCount" parameterType="map" resultType="int">
         SELECT COUNT(*)
         FROM t_good
-        <if test="name!=null and categoryId !=null">
-            WHERE (name LIKE #{name} AND category_id = #{categoryId})
-        </if>
+        <where>
+            <if test="name != null">name LIKE #{name}</if>
+            <if test="categoryId != null">category_id=#{categoryId}</if>
+            <if test="status != null">status=#{status}</if>
+        </where>
     </select>
 </mapper>

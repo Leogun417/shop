@@ -40,11 +40,17 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
 
     public Pager<Good> find(int categoryId, int status, String goodName) {
         HashMap<String, Object> params = new HashMap<String, Object>();
-        params.put("categoryId", categoryId);
-        params.put("status", status);
-        params.put("name", goodName);
-        super.find(Good.class.getName() + ".find", params);
-        return null;
+        if (categoryId > 0) {
+            params.put("categoryId", categoryId);
+        }
+        if (status == 0 || status == 1) {
+            params.put("status", status);
+        }
+        if (goodName != null && "".equals(goodName)) {
+            params.put("name", "%" + goodName + "%");
+        }
+        Pager<Good> goodPager = super.find(Good.class.getName() + ".find", params);
+        return goodPager;
     }
 
     public Good loadById(int id) {

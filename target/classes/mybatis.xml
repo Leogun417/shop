@@ -22,5 +22,6 @@
         <mapper resource="User.xml"/>
         <mapper resource="Address.xml"/>
         <mapper resource="Category.xml"/>
+        <mapper resource="Good.xml"/>
     </mappers>
 </configuration>
