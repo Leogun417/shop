@@ -11,6 +11,15 @@ public class Good {
     private String introduce;
     private Category category;
     private String img;
+    private int status;
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     public int getId() {
         return id;

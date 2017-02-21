@@ -92,4 +92,5 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('kongming@163.com', '123456', '诸葛亮', 0),
   ('qingyunian@qq.com', '123456', '范闲', 0),
   ('qingmei@qq.com', '123456', '五竹', 1);
-
+ALTER TABLE t_good ADD status INT;
+SELECT * FROM t_good;

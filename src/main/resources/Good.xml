@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.shop.model.Good">
+    <insert id="add" parameterType="Good">
+        INSERT INTO t_good (name, price, stock, introduce, img, category_id, status)
+        VALUES (#{name}, #{price}, #{stock}, #{introduce}, #{img}, #{category.id}, #{status})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM t_good
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Good">
+        UPDATE t_Good
+        SET name        = #{name}, price = #{price}, stock = #{stock}, introduce = #{introduce}, img = #{img},
+            category_id = #{category.id}, status = #{status}
+        WHERE id = #{id}
+    </update>
+
+    <resultMap id="GoodMap" type="Good" autoMapping="true">
+        <id column="good_id" property="id"/>
+        <result column="good_name" property="name"/>
+        <association property="category" javaType="Category">
+            <id column="category_id" property="id"/>
+            <result column="category_name" property="name"/>
+        </association>
+    </resultMap>
+    <select id="loadById" parameterType="int" resultMap="GoodMap">
+        SELECT
+            *,
+            t1.id   AS 'good_id',
+            t1.name AS 'good_name',
+            t2.id   AS 'category_id',
+            t2.name AS 'category_name'
+        FROM t_good t1 LEFT JOIN t_category t2
+                ON (t1.category_id = t2.id)
+        WHERE t1.id = #{id}
+    </select>
+
+    <select id="find" parameterType="map" resultType="Good">
+        SELECT *
+        FROM t_good
+        <if test="name!=null and categoryId !=null">
+            WHERE (name LIKE #{name} AND category_id = #{categoryId})
+        </if>
+        <if test="sortBy!=null">
+            ORDER BY
+            ${sortBy}
+            <choose>
+                <when test="order!=null">${order}</when>
+                <otherwise>ASC</otherwise>
+            </choose>
+        </if>
+        LIMIT #{offset}, #{pageSize}
+    </select>
+
+    <select id="findCount" parameterType="map" resultType="int">
+        SELECT COUNT(*)
+        FROM t_good
+        <if test="name!=null and categoryId !=null">
+            WHERE (name LIKE #{name} AND category_id = #{categoryId})
+        </if>
+    </select>
+</mapper>

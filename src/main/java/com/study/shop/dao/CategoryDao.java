@@ -14,6 +14,7 @@ public class CategoryDao extends BaseDao<Category> implements ICategoryDao {
     }
 
     public void delete(int id) {
+        //TODO 包含商品的类别不能删除
         super.delete(Category.class,id);
     }
 
