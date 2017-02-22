@@ -16,26 +16,28 @@
 <div align="center">
     <h1>商品管理</h1>
     <hr>
-    <table class="thin-border" cellpadding="0" cellspacing="0" width="700">
+    <table class="thin-border" cellpadding="0" cellspacing="0" width="650">
         <tr>
-            <td>商品图片</td>
-            <td>商品名称</td>
-            <td>商品价格</td>
-            <td>商品库存</td>
-            <td>商品状态</td>
-            <td>操　　作</td>
+            <td align="center">商品图片</td>
+            <td align="center">商品名称</td>
+            <td align="center">商品价格</td>
+            <td align="center">商品库存</td>
+            <td align="center">商品状态</td>
+            <td align="center">操　　作</td>
         </tr>
         <c:forEach items="${goodPager.datas}" var="good">
             <tr>
-                <td><img src="<%=request.getContextPath()%>/upload/${good.img}" width="60" height="80"></td>
-                <td>${good.name}</td>
-                <td>${good.price}</td>
-                <td>${good.stock}</td>
-                <td>
+                <td align="center"><img src="<%=request.getContextPath()%>/upload/${good.img}" width="60" height="80"></td>
+                <td align="center"><a href="good.do?method=showGoodPage&id=${good.id}">${good.name}</a></td>
+                <td align="center">${good.price}</td>
+                <td align="center">${good.stock}</td>
+                <td align="center">
                     <c:if test="${good.status eq 0}">已下架</c:if>
                     <c:if test="${good.status eq 1}">在　售</c:if>
+                    &nbsp;&nbsp;
+                    <a href="good.do?method=changeGoodStatus&id=${good.id}">更改</a>
                 </td>
-                <td><a href="good.do?method=updateGoodPage">编辑</a>　　<a href="good.do?method=deleteGood">删除</a></td>
+                <td align="center"><a href="good.do?method=updateGoodPage&id=${good.id}">编辑</a>　<a href="good.do?method=deleteGood&id=${good.id}">删除</a></td>
             </tr>
         </c:forEach>
     </table>
