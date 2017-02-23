@@ -9,7 +9,32 @@ public class SystemContext {
     private static ThreadLocal<Integer> offset = new ThreadLocal<Integer>();
     private static ThreadLocal<String> order = new ThreadLocal<String>();//升序或降序
     private static ThreadLocal<String> sortBy = new ThreadLocal<String>();//排序依据
+    public static ThreadLocal<String> UPLOADPATH = new ThreadLocal<>();
+    public static ThreadLocal<String> PROJECTUPLOADPATH = new ThreadLocal<>();
 
+    public static String getUPLOADPATH() {
+        return  UPLOADPATH.get();
+    }
+
+    public static void setUPLOADPATH(String uploadPath) {
+        UPLOADPATH.set(uploadPath);
+    }
+
+    public static void removeUPLOADPATH() {
+        UPLOADPATH.remove();
+    }
+
+    public static String getPROJECTUPLOADPATH() {
+        return  PROJECTUPLOADPATH.get();
+    }
+
+    public static void setPROJECTUPLOADPATH(String projectuploadpath) {
+        PROJECTUPLOADPATH.set(projectuploadpath);
+    }
+
+    public static void removePROJECTUPLOADPATH() {
+        PROJECTUPLOADPATH.remove();
+    }
 
     public static int getPageSize() {
         return pageSize.get();

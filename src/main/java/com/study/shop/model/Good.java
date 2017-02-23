@@ -14,7 +14,6 @@ public class Good {
     @Validate(ValidateType.NOTNULL)
     private String introduce;
     private Category category;
-    @Validate(ValidateType.NOTNULL)
     private String img;
     private int status;
 

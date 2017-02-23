@@ -1,6 +1,7 @@
 package com.study.shop.web;
 
 import com.study.shop.model.Good;
+import com.study.shop.model.SystemContext;
 import com.study.shop.util.RequestUtil;
 import org.apache.commons.fileupload.FileItemIterator;
 import org.apache.commons.fileupload.FileItemStream;
@@ -24,8 +25,6 @@ import java.util.Map;
  */
 public class MultipartWrapper extends HttpServletRequestWrapper {
     private Map<String, String[]> params;
-    public static final String UPLOADPATH = "E:\\Tomcat\\webapps\\miniMall\\upload";
-    public static final String PROJECTUPLOADPATH = "D:\\java\\shop\\src\\main\\webapp\\upload";
     public MultipartWrapper(HttpServletRequest request) {
         super(request);
         params = new HashMap<String, String[]>();
@@ -50,9 +49,9 @@ public class MultipartWrapper extends HttpServletRequestWrapper {
                             //有数据才执行上传
                             String fileName = FilenameUtils.getName(fileItemStream.getName());
                             //完成文件流的拷贝，即完成上传；上传到tomcat目录下，图片可以即时刷新
-                            Streams.copy(inputStream, new FileOutputStream(UPLOADPATH + "/" + fileName), true);
+                            Streams.copy(inputStream, new FileOutputStream(SystemContext.getUPLOADPATH() + "/" + fileName), true);
                             //同时拷贝一份到工程目录下，重新部署后图片不会丢失
-                            Streams.copy(new FileInputStream(UPLOADPATH + "/" + fileName), new FileOutputStream(PROJECTUPLOADPATH + "/" + fileName), true);
+                            Streams.copy(new FileInputStream(SystemContext.getUPLOADPATH() + "/" + fileName), new FileOutputStream(SystemContext.getPROJECTUPLOADPATH() + "/" + fileName), true);
 
 
                             /*FileOutputStream fileOutputStream = new FileOutputStream(UPLOADPATH + "/" + fileName);

@@ -9,6 +9,7 @@ import com.study.shop.util.RequestUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.util.List;
 
 /**
@@ -65,7 +66,7 @@ public class GoodServlet extends BaseServlet {
         }
         return BaseServlet.redirect + "good.do?method=goodsList";
     }
-
+    @Authority("all")
     public String showGoodPage(HttpServletRequest req, HttpServletResponse res) {
         String id = req.getParameter("id");
         if (id != null) {
@@ -107,7 +108,11 @@ public class GoodServlet extends BaseServlet {
             }
             Good rGood = (Good) RequestUtil.setParams(Good.class, req);
             good.setStock(rGood.getStock());
-            good.setImg(rGood.getImg());
+            if (rGood.getImg() != null) {
+                new File(SystemContext.getPROJECTUPLOADPATH() + "/" + good.getImg()).delete();
+                new File(SystemContext.getUPLOADPATH() + "/" + good.getImg()).delete();
+                good.setImg(rGood.getImg());
+            }
             good.setIntroduce(rGood.getIntroduce());
             good.setName(rGood.getName());
             good.setPrice(rGood.getPrice());

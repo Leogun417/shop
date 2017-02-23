@@ -2,24 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5820576-58ca-4fc8-bd10-3e254aa67854" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/upload/ZV)CVF[90SE1)7AXOL5(S`G.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/upload/]JG[GS8IFA~SIABVX9_V_@1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/upload/`[TXN0C{[DXZ_$}V83M)E`R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/shop/upload/ZV)CVF[90SE1)7AXOL5(S`G.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/shop/upload/]JG[GS8IFA~SIABVX9_V_@1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/shop/upload/`[TXN0C{[DXZ_$}V83M)E`R.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/dao/GoodDao.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/dao/GoodDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/Good.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/Good.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/model/SystemContext.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/model/SystemContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/GoodServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/GoodServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/study/shop/web/MultipartWrapper.class" afterPath="$PROJECT_DIR$/target/classes/com/study/shop/web/MultipartWrapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop.war" afterPath="$PROJECT_DIR$/target/shop.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/GoodDao.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/dao/GoodDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Good.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/Good.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/SystemContext.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/model/SystemContext.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/GoodServlet.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/GoodServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/MultipartWrapper.class" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/classes/com/study/shop/web/MultipartWrapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/model/SystemContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/model/SystemContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateGood.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateGood.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/addGood.jsp" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/addGood.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/updateGood.jsp" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/updateGood.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/shop/WEB-INF/showGood.jsp" afterPath="$PROJECT_DIR$/target/shop/WEB-INF/showGood.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,11 +59,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showGood.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showGood.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+            <state relative-caret-position="234">
+              <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -70,8 +72,8 @@
       <file leaf-file-name="GoodServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="93" column="63" lean-forward="false" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
+            <state relative-caret-position="264">
+              <caret line="115" column="52" lean-forward="true" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,15 +94,9 @@
       <file leaf-file-name="GoodDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#293#294#0" expanded="false" />
-                <element signature="e#339#340#0" expanded="false" />
-                <element signature="e#1600#1601#0" expanded="false" />
-                <element signature="e#1677#1678#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,11 +127,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultipartWrapper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultipartWrapper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
-              <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+            <state relative-caret-position="308">
+              <caret line="53" column="167" lean-forward="false" selection-start-line="53" selection-start-column="167" selection-end-line="53" selection-end-column="167" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -197,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/Authority.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateUserPage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateSelf.jsp" />
@@ -234,20 +239,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dao.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/CharFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
         <option value="$PROJECT_DIR$/src/main/sql/tables.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/Good.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/userList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/decorators/decorator.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/updateGood.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/goodsList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addGood.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/model/SystemContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java" />
       </list>
     </option>
   </component>
@@ -1264,7 +1270,7 @@
       <workItem from="1487763089394" duration="7271000" />
       <workItem from="1487774726998" duration="192000" />
       <workItem from="1487775230425" duration="5409000" />
-      <workItem from="1487817774880" duration="1876000" />
+      <workItem from="1487817774880" duration="6777000" />
     </task>
     <task id="LOCAL-00001" summary="创建IGoodDao接口">
       <created>1487606169622</created>
@@ -1294,7 +1300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1487694014874</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="通过将文件上传路径改为tomcat下的路径，并拷贝上传的文件到工程目录下，解决了上传的图片需要重新部署才能显示的问题和重新部署后图片消失的问题">
+      <created>1487819798883</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487819798883</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1330,11 +1343,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242929000" />
+    <option name="totallyTimeSpent" value="247830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1355,7 +1368,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301282" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301282" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23929098" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -1396,12 +1409,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301282" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301282" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23929098" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23929098" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1437,7 +1450,8 @@
     <MESSAGE value="完成goodDao喝good类sql语句的配置" />
     <MESSAGE value="完成MultiPartWrapper类，实现对request请求的包装" />
     <MESSAGE value="完成了商品的添加和商品的展示列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了商品的添加和商品的展示列表" />
+    <MESSAGE value="通过将文件上传路径改为tomcat下的路径，并拷贝上传的文件到工程目录下，解决了上传的图片需要重新部署才能显示的问题和重新部署后图片消失的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过将文件上传路径改为tomcat下的路径，并拷贝上传的文件到工程目录下，解决了上传的图片需要重新部署才能显示的问题和重新部署后图片消失的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1450,13 +1464,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/ICategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1610,13 +1617,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/新建文本文档.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/CharFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1635,14 +1635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1376">
           <caret line="64" column="63" lean-forward="false" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1694,20 +1686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#293#294#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#1600#1601#0" expanded="false" />
-            <element signature="e#1677#1678#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/C56BD9AF634CFC77C8A5D38B653F6507.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/]JG[GS8IFA~SIABVX9_V_@1.png" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Good.xml">
@@ -1742,14 +1720,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/NG1AE7B{H@`[OURURQ4)X9P.png" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/Z}L81TF$X`Z~Q8JSRWZ(AZ9.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="53" column="34" lean-forward="false" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1763,16 +1733,6 @@
         <state relative-caret-position="300">
           <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="93" column="63" lean-forward="false" selection-start-line="93" selection-start-column="63" selection-end-line="93" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1792,10 +1752,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/Good.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/showGood.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="71" lean-forward="false" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        <state relative-caret-position="234">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/model/SystemContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#686#687#0" expanded="false" />
+            <element signature="e#726#727#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
+            <element signature="e#827#828#0" expanded="false" />
+            <element signature="e#872#873#0" expanded="false" />
+            <element signature="e#907#908#0" expanded="false" />
+            <element signature="e#958#959#0" expanded="false" />
+            <element signature="e#1005#1006#0" expanded="false" />
+            <element signature="e#1078#1079#0" expanded="false" />
+            <element signature="e#1134#1135#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+            <element signature="e#1228#1229#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/GoodServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="115" column="52" lean-forward="true" selection-start-line="115" selection-start-column="52" selection-end-line="115" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/dao/GoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/BaseServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/shop/web/MultipartWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="53" column="167" lean-forward="false" selection-start-line="53" selection-start-column="167" selection-end-line="53" selection-end-column="167" />
           <folding />
         </state>
       </provider>

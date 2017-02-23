@@ -2,6 +2,7 @@ package com.study.shop.dao;
 
 import com.study.shop.model.*;
 
+import java.io.File;
 import java.util.HashMap;
 
 /**
@@ -26,6 +27,10 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
 
     public void delete(int id) {
         //TODO 为上线状态或有订单存在的商品不能删除
+        Good good = this.loadById(id);
+        String img = good.getImg();
+        new File(SystemContext.getPROJECTUPLOADPATH() + "/" + img).delete();
+        new File(SystemContext.getUPLOADPATH() + "/" + img).delete();
         super.delete(Good.class, id);
     }
 

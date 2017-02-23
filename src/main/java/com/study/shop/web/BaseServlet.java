@@ -22,6 +22,8 @@ public class BaseServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         DaoUtil.inject(this);
+        SystemContext.setUPLOADPATH("E:\\Tomcat\\webapps\\miniMall\\upload");
+        SystemContext.setPROJECTUPLOADPATH("D:\\java\\shop\\src\\main\\webapp\\upload");
         if (ServletFileUpload.isMultipartContent(req)) {
             req = new MultipartWrapper(req);
         }
