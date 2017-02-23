@@ -16,10 +16,11 @@
 <div align="center">
     <h1>商品管理</h1>
     <hr>
-    <table class="thin-border" cellpadding="0" cellspacing="0" width="650">
+    <table class="thin-border" cellpadding="0" cellspacing="0" width="700">
         <tr>
             <td align="center">商品图片</td>
             <td align="center">商品名称</td>
+            <td align="center">商品类别</td>
             <td align="center">商品价格</td>
             <td align="center">商品库存</td>
             <td align="center">商品状态</td>
@@ -29,8 +30,9 @@
             <tr>
                 <td align="center"><img src="<%=request.getContextPath()%>/upload/${good.img}" width="60" height="80"></td>
                 <td align="center"><a href="good.do?method=showGoodPage&id=${good.id}">${good.name}</a></td>
+                <td align="center">${good.category.name}</td>
                 <td align="center">${good.price}</td>
-                <td align="center">${good.stock}</td>
+                <td align="center">${good.stock}　<a href="good.do?method=addStockPage&id=${good.id}">增加</a> </td>
                 <td align="center">
                     <c:if test="${good.status eq 0}">已下架</c:if>
                     <c:if test="${good.status eq 1}">在　售</c:if>

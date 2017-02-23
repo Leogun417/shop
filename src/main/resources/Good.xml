@@ -40,11 +40,17 @@
         WHERE t1.id = #{id}
     </select>
 
-    <select id="find" parameterType="map" resultType="Good">
-        SELECT *
-        FROM t_good
+    <select id="find" parameterType="map" resultMap="GoodMap">
+        SELECT
+        *,
+        t1.id   AS 'good_id',
+        t1.name AS 'good_name',
+        t2.id   AS 'category_id',
+        t2.name AS 'category_name'
+        FROM t_good t1 LEFT JOIN t_category t2
+        ON (t1.category_id = t2.id)
         <where>
-            <if test="name != null">name LIKE #{name}</if>
+            <if test="good_name != null">name LIKE #{name}</if>
             <if test="categoryId != null">category_id=#{categoryId}</if>
             <if test="status != null">status=#{status}</if>
         </where>

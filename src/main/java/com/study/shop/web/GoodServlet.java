@@ -66,6 +66,7 @@ public class GoodServlet extends BaseServlet {
         }
         return BaseServlet.redirect + "good.do?method=goodsList";
     }
+
     @Authority("all")
     public String showGoodPage(HttpServletRequest req, HttpServletResponse res) {
         String id = req.getParameter("id");
@@ -132,6 +133,21 @@ public class GoodServlet extends BaseServlet {
         String id = req.getParameter("id");
         if (id != null) {
             goodDao.changeStatus(Integer.parseInt(id));
+        }
+        return BaseServlet.redirect + "good.do?method=goodsList";
+    }
+
+    public String addStockPage(HttpServletRequest req, HttpServletResponse res) {
+        String id = req.getParameter("id");
+        req.setAttribute("id", id);
+        return "addStock.jsp";
+    }
+
+    public String addStock(HttpServletRequest req, HttpServletResponse res) {
+        String id = req.getParameter("id");
+        String num = req.getParameter("num");
+        if (id != null && num != null && id.equals("") && num.equals("")) {
+            goodDao.addStock(Integer.parseInt(id), Integer.parseInt(num));
         }
         return BaseServlet.redirect + "good.do?method=goodsList";
     }

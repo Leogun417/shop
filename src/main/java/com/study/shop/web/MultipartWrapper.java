@@ -1,8 +1,6 @@
 package com.study.shop.web;
 
-import com.study.shop.model.Good;
 import com.study.shop.model.SystemContext;
-import com.study.shop.util.RequestUtil;
 import org.apache.commons.fileupload.FileItemIterator;
 import org.apache.commons.fileupload.FileItemStream;
 import org.apache.commons.fileupload.FileUploadException;
