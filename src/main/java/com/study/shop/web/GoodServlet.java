@@ -92,8 +92,6 @@ public class GoodServlet extends BaseServlet {
         req.setAttribute("categoryList", categoryList);
         if (id != null) {
             Good good = goodDao.loadById(Integer.parseInt(id));
-            int categoryId = good.getCategory().getId();
-            req.setAttribute("categoryId", categoryId);
             req.setAttribute("good", good);
         }
         return "updateGood.jsp";

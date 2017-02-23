@@ -34,6 +34,7 @@
                 <td>商品类别</td>
                 <td>
                     <select name="categoryId">
+                        <option>请选择商品类别</option>
                         <c:forEach items="${categoryList}" var="category">
                             <option value="${category.id}">${category.name}</option>
                         </c:forEach>

@@ -37,8 +37,9 @@
                 <td>商品类别</td>
                 <td>
                     <select name="categoryId">
+                        <option>请选择商品类别</option>
                         <c:forEach items="${categoryList}" var="category">
-                            <c:if test="${category.id eq categoryId}">
+                            <c:if test="${category.id eq (good.category).id}">
                                 <option selected="selected" value="${category.id}">${category.name}</option>
                             </c:if>
                             <c:if test="${category.id ne categoryId}">
