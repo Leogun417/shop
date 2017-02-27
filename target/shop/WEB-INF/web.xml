@@ -92,6 +92,16 @@
         <servlet-name>CategoryServlet</servlet-name>
         <url-pattern>/category.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.study.shop.web.OrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/order.do</url-pattern>
+    </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>

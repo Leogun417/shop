@@ -51,6 +51,8 @@ public class AddressServlet extends BaseServlet {
 
         if (from.equals("userInfo")) {
             return BaseServlet.redirect + "user.do?method=showUserInfoPage&id=" + loginUser.getId();
+        } else if (from.equals("shopCart")) {
+            return BaseServlet.redirect + "order.do?method=showShopCartPage";
         } else {
             return BaseServlet.redirect + "user.do?method=showSelfInfoPage";
         }
@@ -95,6 +97,7 @@ public class AddressServlet extends BaseServlet {
             return BaseServlet.redirect + "user.do?method=showSelfInfoPage";
         }
     }
+
     @Authority("user")
     public String deleteAddress(HttpServletRequest req, HttpServletResponse res) {
         String from = req.getParameter("from");
