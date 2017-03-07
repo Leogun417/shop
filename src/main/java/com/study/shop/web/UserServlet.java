@@ -58,6 +58,7 @@ public class UserServlet extends BaseServlet {
         try {
             User loginUser = userDao.login(req.getParameter("username"), req.getParameter("password"));
             req.getSession(true).setAttribute("loginUser", loginUser);
+            req.getSession(true).setMaxInactiveInterval(60 * 60);
         } catch (ShopException se) {
             req.setAttribute("e", se.getMessage());
             return "login.jsp";

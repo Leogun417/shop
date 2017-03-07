@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.shop.model.Order">
+    <insert id="add" parameterType="Order">
+        INSERT INTO t_order (buy_date, status, user_id, address_id)
+        VALUES (#{buyDate}, #{status}, #{user.id}, #{address.id})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM t_order
+        WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="Order">
+        UPDATE t_order
+        SET confirm_date = #{confirmDate}, price = #{price}, pay_date = #{payDate}, send_good_date = #{sendGoodDate},
+            status       = #{status},
+            address_id   = #{address.id}
+        WHERE id = #{id}
+    </update>
+
+    <resultMap id="orderMap" type="Order" autoMapping="true">
+        <id column="order_id" property="id"/>
+        <result column="order_status" property="status"/>
+        <association property="user" javaType="User">
+            <id column="user_id" property="id"/>
+            <result column="user_name" property="name"/>
+            <result column="nickname" property="nickname"/>
+            <result column="type" property="type"/>
+        </association>
+        <association property="address" javaType="Address">
+            <id column="address_id" property="id"/>
+            <result column="address" property="address"/>
+            <result column="phone" property="phone"/>
+            <result column="postcode" property="postcode"/>
+        </association>
+        <collection property="goodList" ofType="GoodInCart">
+            <id column="good_in_cart_id" property="id"/>
+            <result column="good_number" property="number"/>
+            <result column="good_price" property="price"/>
+            <result column="good_id" property="goodId"/>
+            <association property="good" javaType="Good">
+                <id column="good_id" property="id"/>
+                <result column="good_name" property="name"/>
+                <result column="good_status" property="status"/>
+                <result column="price" property="price"/>
+                <result column="stock" property="stock"/>
+                <result column="img" property="img"/>
+            </association>
+        </collection>
+    </resultMap>
+    <select id="loadById" parameterType="int" resultMap="orderMap">
+        SELECT
+            *,
+            t1.id     AS 'order_id',
+            t2.id     AS 'user_id',
+            t3.id     AS 'good_in_cart_id',
+            t4.id     AS 'good_id',
+            t5.id     AS 'address_id',
+            t2.name   AS 'user_name',
+            t4.name   AS 'good_name',
+            t4.status AS 'good_status',
+            t1.status AS 'order_status'
+        FROM t_order t1
+            LEFT JOIN t_user t2 ON (t1.user_id = t2.id)
+            LEFT JOIN t_good_in_cart_order t3 ON (t1.id = t3.order_id)
+            LEFT JOIN t_good t4 ON (t3.good_id = t4.id)
+            LEFT JOIN t_address t5 ON (t1.address_id = t5.id)
+        WHERE t1.id = #{id}
+    </select>
+
+    <select id="findByUserAndStatus" parameterType="map" resultType="orderMap">
+        SELECT
+        *,
+        t1.id AS 'order_id',
+        t2.id AS 'user_id',
+        t3.id AS 'good_in_cart_id',
+        t4.id AS 'good_id',
+        t5.id AS 'address_id',
+        t2.name AS 'user_name',
+        t4.name AS 'good_name',
+        t4.status AS 'good_status',
+        t1.status AS 'order_status'
+        FROM t_order t1
+        LEFT JOIN t_user t2 ON (t1.user_id = t2.id)
+        LEFT JOIN t_good_in_cart_order t3 ON (t1.id = t3.order_id)
+        LEFT JOIN t_good t4 ON (t3.good_id = t4.id)
+        LEFT JOIN t_address t5 ON (t1.address_id = t5.id)
+        <where>
+            <if test="userId != null">user_id=#{userId}</if>
+            <if test="goodStatus != null">AND good_status=#{goodStatus}</if>
+        </where>
+        <if test="sortBy!=null">
+            ORDER BY
+            ${sortBy}
+            <choose>
+                <when test="order!=null">${order}</when>
+                <otherwise>ASC</otherwise>
+            </choose>
+        </if>
+        LIMIT #{offset}, #{pageSize}
+    </select>
+
+    <select id="findByUserAndStatusCount" parameterType="map" resultType="int">
+        SELECT COUNT(*)
+        FROM t_order
+        <where>
+            <if test="userId != null">user_id=#{userId}</if>
+            <if test="goodStatus != null">AND good_status=#{goodStatus}</if>
+        </where>
+    </select>
+</mapper>

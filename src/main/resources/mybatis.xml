@@ -23,5 +23,7 @@
         <mapper resource="Address.xml"/>
         <mapper resource="Category.xml"/>
         <mapper resource="Good.xml"/>
+        <mapper resource="GoodInCart.xml"/>
+        <mapper resource="Order.xml"/>
     </mappers>
 </configuration>

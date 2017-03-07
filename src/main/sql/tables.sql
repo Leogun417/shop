@@ -17,8 +17,8 @@ CREATE TABLE t_address (
   CONSTRAINT FOREIGN KEY (user_id)
   REFERENCES t_user (id)
 );
-SELECT * FROM t_address;
-ALTER TABLE t_address CHANGE adress address VARCHAR(200);
+
+ALTER TABLE t_good_in_cart_order CHANGE goo_price good_price INT;
 CREATE TABLE t_order (
   id             INT PRIMARY KEY AUTO_INCREMENT,
   buy_date       DATETIME,
@@ -38,6 +38,7 @@ CREATE TABLE t_category (
   id   INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(20)
 );
+
 CREATE TABLE t_good (
   id          INT PRIMARY KEY AUTO_INCREMENT,
   category_id INT,
@@ -50,16 +51,18 @@ CREATE TABLE t_good (
   REFERENCES t_category (id)
 );
 
-CREATE TABLE t_good_order (
+CREATE TABLE t_good_in_cart_order (
   id       INT PRIMARY KEY AUTO_INCREMENT,
   good_id  INT,
   order_id INT,
+  good_number INT,
+  good_price INT,
   CONSTRAINT FOREIGN KEY (good_id)
   REFERENCES t_good (id),
   CONSTRAINT FOREIGN KEY (order_id)
   REFERENCES t_order (id)
 );
-DROP TABLE t_user;
+DROP TABLE t_good_order;
 SELECT *
 FROM t_address;
 INSERT INTO t_user (username, password, nickname, type) SELECT
@@ -92,6 +95,6 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('kongming@163.com', '123456', '诸葛亮', 0),
   ('qingyunian@qq.com', '123456', '范闲', 0),
   ('qingmei@qq.com', '123456', '五竹', 1);
-ALTER TABLE t_good ADD status INT;
-SELECT * FROM t_good;
+ALTER TABLE t_order ADD confirm_date DATETIME;
+SELECT * FROM t_order;
 DELETE FROM t_good;

@@ -119,5 +119,4 @@ public class AddressServlet extends BaseServlet {
             return BaseServlet.redirect + "user.do?method=showSelfInfoPage";
         }
     }
-
 }

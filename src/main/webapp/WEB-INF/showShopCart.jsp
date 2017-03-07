@@ -29,15 +29,23 @@
                     <td align="center">操　　作</td>
                 </tr>
                 <c:forEach items="${shopCart.goods}" var="goodInCart">
+                    <c:set var="totalPrice" value="${totalPrice + goodInCart.price}"/>
                     <tr>
                         <td>${goodInCart.good.name}</td>
                         <td align="center">${goodInCart.good.price}</td>
-                        <td align="center">${goodInCart.number}　<a href="order.do?method=updateNumOfGoodInCartPage&goodId=${goodInCart.goodId}">修改</a></td>
+                        <td align="center">${goodInCart.number}　<a
+                                href="order.do?method=updateNumOfGoodInCartPage&goodId=${goodInCart.goodId}">修改</a></td>
                         <td align="center">${goodInCart.price}</td>
-                        <td align="center"><a href="order.do?method=deleteGoodInCart&goodId=${goodInCart.goodId}">删除</a></td>
+                        <td align="center"><a href="order.do?method=deleteGoodInCart&goodId=${goodInCart.goodId}">删除</a>
+                        </td>
                     </tr>
                 </c:forEach>
-                <tr><td colspan="6"><a href="order.do?method=clearGoodInCart">清空购物车</a></td></tr>
+                <tr>
+                    <td colspan="6">
+                        <a href="order.do?method=clearGoodInCart">清空购物车</a>　　　　　　　　　　　　　　　　　　　　　　
+                        总计：￥${totalPrice}
+                    </td>
+                </tr>
                 <tr>
                     <td colspan="6">请选择收货地址</td>
                 </tr>
@@ -52,13 +60,15 @@
                                     详细地址：${address.address}<br/>
                                     联系电话：${address.phone}<br/>
                                     邮政编码：${address.postcode}　　　　　　　　　　　　　　　　　　　　　　　　　　
-                                    <input type="radio" checked="checked" name="addressId" value="${address.id}"/><hr>
+                                    <input type="radio" checked="checked" name="addressId" value="${address.id}"/>
+                                    <hr>
                                 </c:if>
                                 <c:if test="${status.index ne 0}">
                                     详细地址：${address.address}<br/>
                                     联系电话：${address.phone}<br/>
                                     邮政编码：${address.postcode}　　　　　　　　　　　　　　　　　　　　　　　　　　
-                                    <input type="radio" name="addressId" value="${address.id}"/><hr>
+                                    <input type="radio" name="addressId" value="${address.id}"/>
+                                    <hr>
                                 </c:if>
                             </c:forEach>
                         </c:if>

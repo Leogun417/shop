@@ -33,10 +33,14 @@ public class BaseDao<T> {
     }
 
     public void delete(Class<T> cls, int id) {
+        delete(cls.getName() + ".delete", id);
+    }
+
+    public void delete(String sqlId, int id) {
         SqlSession session = null;
         try {
             session = MyBatisUtil.getSession();
-            session.delete(cls.getName() + ".delete", id);
+            session.delete(sqlId, id);
             session.commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -83,6 +87,8 @@ public class BaseDao<T> {
         }
         return obj;
     }
+
+
 
     public Pager<T> find(String sqlId, Map params) {
         SqlSession session = null;

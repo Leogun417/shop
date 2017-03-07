@@ -11,16 +11,37 @@ public class Order {
     private Date buyDate;
     private Date payDate;
     private Date sendGoodDate;
+    private Date confirmDate;
+    /*
+    * 1为下单，2为确认付款，3为发货，4为确认收货
+    * */
     private int status;
+    private double price;
     private User user;
     private Address address;
-    private List<Good> goodList;
+    private List<GoodInCart> goodList;
 
-    public List<Good> getGoodList() {
+    public Date getConfirmDate() {
+        return confirmDate;
+    }
+
+    public void setConfirmDate(Date confirmDate) {
+        this.confirmDate = confirmDate;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public List<GoodInCart> getGoodList() {
         return goodList;
     }
 
-    public void setGoodList(List<Good> goodList) {
+    public void setGoodList(List<GoodInCart> goodList) {
         this.goodList = goodList;
     }
 
