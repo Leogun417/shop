@@ -18,13 +18,15 @@ CREATE TABLE t_address (
   REFERENCES t_user (id)
 );
 
-ALTER TABLE t_good_in_cart_order CHANGE goo_price good_price INT;
+ALTER TABLE t_good_in_cart_order
+  CHANGE goo_price good_price INT;
 CREATE TABLE t_order (
   id             INT PRIMARY KEY AUTO_INCREMENT,
   buy_date       DATETIME,
   pay_date       DATETIME,
   send_good_date DATETIME,
-  status         INT,
+  price          DOUBLE,
+  STATUS         INT,
   user_id        INT,
   address_id     INT,
   CONSTRAINT FOREIGN KEY (user_id)
@@ -52,11 +54,11 @@ CREATE TABLE t_good (
 );
 
 CREATE TABLE t_good_in_cart_order (
-  id       INT PRIMARY KEY AUTO_INCREMENT,
-  good_id  INT,
-  order_id INT,
+  id          INT PRIMARY KEY AUTO_INCREMENT,
+  good_id     INT,
+  order_id    INT,
   good_number INT,
-  good_price INT,
+  good_price  INT,
   CONSTRAINT FOREIGN KEY (good_id)
   REFERENCES t_good (id),
   CONSTRAINT FOREIGN KEY (order_id)
@@ -95,6 +97,8 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('kongming@163.com', '123456', '诸葛亮', 0),
   ('qingyunian@qq.com', '123456', '范闲', 0),
   ('qingmei@qq.com', '123456', '五竹', 1);
-ALTER TABLE t_order ADD confirm_date DATETIME;
-SELECT * FROM t_order;
+ALTER TABLE t_order
+  CHANGE STATUS status INT;
+SELECT *
+FROM t_good_in_cart_order;
 DELETE FROM t_good;

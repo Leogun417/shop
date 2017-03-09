@@ -3,9 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.study.shop.model.Order">
-    <insert id="add" parameterType="Order">
-        INSERT INTO t_order (buy_date, status, user_id, address_id)
-        VALUES (#{buyDate}, #{status}, #{user.id}, #{address.id})
+    <!--在插入数据的同时，将自动生成的主键设置到领域模型的属性中-->
+    <insert id="add" parameterType="Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO t_order (buy_date, status, user_id, address_id, price)
+        VALUES (#{buyDate}, #{status}, #{user.id}, #{address.id}, #{price})
     </insert>
 
     <delete id="delete" parameterType="int">
@@ -24,9 +25,10 @@
     <resultMap id="orderMap" type="Order" autoMapping="true">
         <id column="order_id" property="id"/>
         <result column="order_status" property="status"/>
+        <result column="order_price" property="price"/>
         <association property="user" javaType="User">
             <id column="user_id" property="id"/>
-            <result column="user_name" property="name"/>
+            <result column="username" property="username"/>
             <result column="nickname" property="nickname"/>
             <result column="type" property="type"/>
         </association>
@@ -59,10 +61,10 @@
             t3.id     AS 'good_in_cart_id',
             t4.id     AS 'good_id',
             t5.id     AS 'address_id',
-            t2.name   AS 'user_name',
             t4.name   AS 'good_name',
             t4.status AS 'good_status',
-            t1.status AS 'order_status'
+            t1.status AS 'order_status',
+            t1.price  AS 'order_price'
         FROM t_order t1
             LEFT JOIN t_user t2 ON (t1.user_id = t2.id)
             LEFT JOIN t_good_in_cart_order t3 ON (t1.id = t3.order_id)
@@ -71,7 +73,7 @@
         WHERE t1.id = #{id}
     </select>
 
-    <select id="findByUserAndStatus" parameterType="map" resultType="orderMap">
+    <select id="findByUserAndStatus" parameterType="map" resultMap="orderMap">
         SELECT
         *,
         t1.id AS 'order_id',
@@ -79,7 +81,6 @@
         t3.id AS 'good_in_cart_id',
         t4.id AS 'good_id',
         t5.id AS 'address_id',
-        t2.name AS 'user_name',
         t4.name AS 'good_name',
         t4.status AS 'good_status',
         t1.status AS 'order_status'
@@ -89,8 +90,8 @@
         LEFT JOIN t_good t4 ON (t3.good_id = t4.id)
         LEFT JOIN t_address t5 ON (t1.address_id = t5.id)
         <where>
-            <if test="userId != null">user_id=#{userId}</if>
-            <if test="goodStatus != null">AND good_status=#{goodStatus}</if>
+            <if test="userId != null">t1.user_id=#{userId}</if>
+            <if test="orderStatus != null">AND t1.status=#{orderStatus}</if>
         </where>
         <if test="sortBy!=null">
             ORDER BY
