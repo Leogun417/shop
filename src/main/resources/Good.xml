@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.study.shop.model.Good">
     <insert id="add" parameterType="Good">
-        INSERT INTO t_good (name, price, stock, introduce, img, category_id, status)
+        INSERT INTO t_good (name, price, stock, introduce, img, category_id, good_status)
         VALUES (#{name}, #{price}, #{stock}, #{introduce}, #{img}, #{category.id}, #{status})
     </insert>
 
@@ -16,13 +16,14 @@
     <update id="update" parameterType="Good">
         UPDATE t_Good
         SET name        = #{name}, price = #{price}, stock = #{stock}, introduce = #{introduce}, img = #{img},
-            category_id = #{category.id}, status = #{status}
+            category_id = #{category.id}, good_status = #{status}
         WHERE id = #{id}
     </update>
 
     <resultMap id="GoodMap" type="Good" autoMapping="true">
         <id column="good_id" property="id"/>
         <result column="good_name" property="name"/>
+        <result column="good_status" property="status"/>
         <association property="category" javaType="Category">
             <id column="category_id" property="id"/>
             <result column="category_name" property="name"/>
@@ -51,8 +52,8 @@
         ON (t1.category_id = t2.id)
         <where>
             <if test="good_name != null">name LIKE #{name}</if>
-            <if test="categoryId != null">category_id=#{categoryId}</if>
-            <if test="status != null">status=#{status}</if>
+            <if test="categoryId != null">AND category_id=#{categoryId}</if>
+            <if test="status != null">AND good_status=#{status}</if>
         </where>
         <if test="sortBy!=null">
             ORDER BY
@@ -71,7 +72,7 @@
         <where>
             <if test="name != null">name LIKE #{name}</if>
             <if test="categoryId != null">category_id=#{categoryId}</if>
-            <if test="status != null">status=#{status}</if>
+            <if test="status != null">good_status=#{status}</if>
         </where>
     </select>
 </mapper>

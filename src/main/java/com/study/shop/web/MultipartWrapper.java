@@ -49,7 +49,8 @@ public class MultipartWrapper extends HttpServletRequestWrapper {
                             //完成文件流的拷贝，即完成上传；上传到tomcat目录下，图片可以即时刷新
                             Streams.copy(inputStream, new FileOutputStream(SystemContext.getUPLOADPATH() + "/" + fileName), true);
                             //同时拷贝一份到工程目录下，重新部署后图片不会丢失
-                            Streams.copy(new FileInputStream(SystemContext.getUPLOADPATH() + "/" + fileName), new FileOutputStream(SystemContext.getPROJECTUPLOADPATH() + "/" + fileName), true);
+                            Streams.copy(new FileInputStream(SystemContext.getUPLOADPATH() + "/" + fileName),
+                                    new FileOutputStream(SystemContext.getPROJECTUPLOADPATH() + "/" + fileName), true);
 
 
                             /*FileOutputStream fileOutputStream = new FileOutputStream(UPLOADPATH + "/" + fileName);

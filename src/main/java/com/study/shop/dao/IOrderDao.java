@@ -12,4 +12,5 @@ public interface IOrderDao {
     void add(User user, int addressId, Order order);
     void addToCart(GoodInCart goodInCart);
     Pager<Order> find(int userId, int orderStatus);
+    Order loadById(int id);
 }

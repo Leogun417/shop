@@ -10,6 +10,7 @@ import java.util.List;
  */
 public class OrderDao extends BaseDao implements IOrderDao {
     IAddressDao addressDao;
+
     @DaoInject
     public void setAddressDao(IAddressDao addressDao) {
         this.addressDao = addressDao;
@@ -19,9 +20,10 @@ public class OrderDao extends BaseDao implements IOrderDao {
     public void add(User user, int addressId, Order order) {
         order.setUser(user);
         order.setAddress((Address) addressDao.loadById(addressId));
-        this.add(order);
+        super.add(order);
         List<GoodInCart> goodList = order.getGoodList();
         for (GoodInCart goodInCart : goodList) {
+            goodInCart.setOrder(order);
             addToCart(goodInCart);
         }
     }
@@ -34,8 +36,17 @@ public class OrderDao extends BaseDao implements IOrderDao {
     @Override
     public Pager<Order> find(int userId, int orderStatus) {
         HashMap<String, Object> params = new HashMap<>();
-        params.put("userId", userId);
-        params.put("orderStatus", orderStatus);
-        return this.find(Order.class.getName() + ".findByUserAndStatus", params);
+        if (userId != -1) {
+            params.put("userId", userId);
+        }
+        if (orderStatus != -1) {
+            params.put("orderStatus", orderStatus);
+        }
+        return super.find(Order.class.getName() + ".findByUserAndStatus", params);
+    }
+
+    @Override
+    public Order loadById(int id) {
+        return (Order) super.loadById(Order.class.getName() + ".loadById", id);
     }
 }

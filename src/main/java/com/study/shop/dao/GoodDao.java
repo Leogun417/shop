@@ -65,8 +65,10 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
     public void changeStatus(int id) {
         Good good = loadById(id);
         int status = good.getStatus();
+        System.out.println(status);
         if (status == 0) {
             status = 1;
+            System.out.println(status);
         } else if (status == 1) {
             status = 0;
         }

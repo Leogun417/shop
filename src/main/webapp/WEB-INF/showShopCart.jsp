@@ -19,7 +19,7 @@
         当前购物车没有商品！
     </c:if>
     <c:if test="${shopCart.isEmpty eq false}">
-        <form action="" method="post">
+        <form action="order.do?method=showOrderPage" method="post">
             <table class="thin-border" width="600" cellpadding="0" cellspacing="0">
                 <tr>
                     <td align="center">商品名称</td>
@@ -44,6 +44,7 @@
                     <td colspan="6">
                         <a href="order.do?method=clearGoodInCart">清空购物车</a>　　　　　　　　　　　　　　　　　　　　　　
                         总计：￥${totalPrice}
+                        <input type="hidden" value="${totalPrice}" name="totalPrice">
                     </td>
                 </tr>
                 <tr>
@@ -77,7 +78,7 @@
                 <tr>
                     <td colspan="6">
                         <c:if test="${not empty loginUser.addrList}">
-                            <a href="">结　算</a>
+                            <input type="submit" value="结算"/>
                         </c:if>
                     </td>
                 </tr>

@@ -25,8 +25,9 @@ CREATE TABLE t_order (
   buy_date       DATETIME,
   pay_date       DATETIME,
   send_good_date DATETIME,
+  confirm_date   DATETIME,
   price          DOUBLE,
-  STATUS         INT,
+  order_status   INT,
   user_id        INT,
   address_id     INT,
   CONSTRAINT FOREIGN KEY (user_id)
@@ -44,6 +45,7 @@ CREATE TABLE t_category (
 CREATE TABLE t_good (
   id          INT PRIMARY KEY AUTO_INCREMENT,
   category_id INT,
+  good_status INT,
   name        VARCHAR(20),
   price       DOUBLE,
   stock       INT,
@@ -64,7 +66,7 @@ CREATE TABLE t_good_in_cart_order (
   CONSTRAINT FOREIGN KEY (order_id)
   REFERENCES t_order (id)
 );
-DROP TABLE t_good_order;
+DROP TABLE t_order;
 SELECT *
 FROM t_address;
 INSERT INTO t_user (username, password, nickname, type) SELECT
@@ -97,8 +99,12 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('kongming@163.com', '123456', '诸葛亮', 0),
   ('qingyunian@qq.com', '123456', '范闲', 0),
   ('qingmei@qq.com', '123456', '五竹', 1);
-ALTER TABLE t_order
-  CHANGE STATUS status INT;
+ALTER TABLE t_good
+  CHANGE status good_status INT;
 SELECT *
-FROM t_good_in_cart_order;
-DELETE FROM t_good;
+FROM t_good;
+SELECT *
+FROM t_order;
+DELETE FROM t_good_in_cart_order;
+
+

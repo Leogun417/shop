@@ -25,6 +25,7 @@
     欢迎登录，${loginUser.nickname}!&nbsp;&nbsp;
     <a href="good.do?method=goodsPage">浏览商品</a>&nbsp;&nbsp;
     <a href="order.do?method=showShopCartPage">查看购物车</a>&nbsp;&nbsp;
+    <a href="order.do?method=showUserAllOrderPage">我的订单</a>&nbsp;&nbsp;
     <a href="user.do?method=showSelfInfoPage">我的信息</a>&nbsp;&nbsp;
     <a href="user.do?method=updateSelfPage">修改个人信息</a>&nbsp;&nbsp;
     <a href="user.do?method=registerPage">用户注册</a>&nbsp;&nbsp;
