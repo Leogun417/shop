@@ -34,10 +34,10 @@ public class OrderDao extends BaseDao implements IOrderDao {
     }
 
     @Override
-    public Pager<Order> find(int userId, int orderStatus) {
+    public Pager<Order> find(String name, int orderStatus) {
         HashMap<String, Object> params = new HashMap<>();
-        if (userId != -1) {
-            params.put("userId", userId);
+        if (!"".equals(name) && null != name) {
+            params.put("name", "%" + name + "%");
         }
         if (orderStatus != -1) {
             params.put("orderStatus", orderStatus);
@@ -48,5 +48,21 @@ public class OrderDao extends BaseDao implements IOrderDao {
     @Override
     public Order loadById(int id) {
         return (Order) super.loadById(Order.class.getName() + ".loadById", id);
+    }
+
+    @Override
+    public void update(Order order) {
+        super.update(order);
+    }
+
+    @Override
+    public void delete(int id) {
+        this.deleteFromCart(id);
+        super.delete(Order.class, id);
+    }
+
+    @Override
+    public void deleteFromCart(int orderId) {
+        super.delete(GoodInCart.class, orderId);
     }
 }

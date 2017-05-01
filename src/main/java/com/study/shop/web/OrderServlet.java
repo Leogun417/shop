@@ -7,6 +7,7 @@ import com.study.shop.model.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.Date;
 
 /**
@@ -140,8 +141,7 @@ public class OrderServlet extends BaseServlet {
     @Authority("user")
     public String showUserAllOrderPage(HttpServletRequest req, HttpServletResponse res) {
         User loginUser = (User) req.getSession(true).getAttribute("loginUser");
-        Pager<Order> orderPager = orderDao.find(loginUser.getId(), 1);
-        System.out.println(orderPager.getDatas().size());
+        Pager<Order> orderPager = orderDao.find(loginUser.getUsername(), -1);
         req.setAttribute("orderPager", orderPager);
         return "showUserAllOrder.jsp";
     }
@@ -155,5 +155,64 @@ public class OrderServlet extends BaseServlet {
             req.setAttribute("fromMethod", "showOrderInfoPage");
         }
         return "showOrder.jsp";
+    }
+
+    @Authority("user")
+    public String payFinishedPage(HttpServletRequest req, HttpServletResponse res) {
+        String orderId = req.getParameter("orderId");
+        if (orderId != null) {
+            Order order = orderDao.loadById(Integer.parseInt(orderId));
+            order.setPayDate(new Date());
+            order.setStatus(2);
+            orderDao.update(order);
+            req.setAttribute("paytime", order.getPayDate());
+        }
+        return "payFinished.jsp";
+    }
+
+    @Authority("user")
+    public String deleteOrder(HttpServletRequest req, HttpServletResponse res) {
+        String orderId = req.getParameter("orderId");
+        if (orderId != null) {
+            orderDao.delete(Integer.parseInt(orderId));
+        }
+        return BaseServlet.redirect + "order.do?method=showUserAllOrderPage";
+    }
+
+    public String manageOrdersPage(HttpServletRequest req, HttpServletResponse res) {
+        User loginUser = (User) req.getSession(true).getAttribute("loginUser");
+        Pager<Order> orderPager = null;
+        String name = req.getParameter("name");
+        String orderStatus = req.getParameter("orderStatus");
+        if (orderStatus != null) {
+            orderPager = orderDao.find(name, Integer.parseInt(orderStatus));
+        } else {
+            orderPager = orderDao.find(name, -1);
+        }
+        req.setAttribute("orderPager", orderPager);
+        return "manageOrders.jsp";
+    }
+
+    public String sendGoods(HttpServletRequest req, HttpServletResponse res) {
+        String orderId = req.getParameter("orderId");
+        if (orderId != null) {
+            Order order = orderDao.loadById(Integer.parseInt(orderId));
+            order.setSendGoodDate(new Date());
+            order.setStatus(3);
+            orderDao.update(order);
+        }
+        return BaseServlet.redirect + "order.do?method=manageOrdersPage";
+    }
+
+    @Authority("user")
+    public String confirmReceive(HttpServletRequest req, HttpServletResponse res) {
+        String orderId = req.getParameter("orderId");
+        if (orderId != null) {
+            Order order = orderDao.loadById(Integer.parseInt(orderId));
+            order.setStatus(4);
+            order.setConfirmDate(new Date());
+            orderDao.update(order);
+        }
+        return BaseServlet.redirect + "order.do?method=showUserAllOrderPage";
     }
 }

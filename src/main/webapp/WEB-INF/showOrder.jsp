@@ -16,7 +16,8 @@
 <div align="center">
     <h1>订单详情</h1>
     <hr>
-    <form action="" method="post">
+    <form action="order.do?method=payFinishedPage" method="post">
+        <input type="hidden" name="orderId" value="${order.id}">
         <table class="thin-border" width="800" cellpadding="0" cellspacing="0">
             <tr>
                 <td align="center">商品图片</td>

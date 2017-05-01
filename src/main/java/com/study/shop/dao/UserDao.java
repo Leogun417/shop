@@ -40,7 +40,7 @@ public class UserDao extends BaseDao<User> implements IUserDao {
 
     public Pager<User> find(String name) {
         HashMap<String, Object> params = new HashMap<String, Object>();
-        if (!"".equals(name) || null != name) {
+        if (!"".equals(name) && null != name) {
             params.put("name", "%" + name + "%");
         }
         return super.find(User.class.getName() + ".find", params);

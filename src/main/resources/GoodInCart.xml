@@ -8,7 +8,7 @@
             VALUES (#{order.id}, #{good.id}, #{number}, #{price})
     </insert>
 
-    <delete id="deleteByOrderId" parameterType="int">
+    <delete id="delete" parameterType="int">
         DELETE FROM t_good_in_cart_order
         WHERE order_id = #{id}
     </delete>

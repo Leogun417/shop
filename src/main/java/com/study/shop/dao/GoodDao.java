@@ -80,6 +80,7 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
         Good good = loadById(id);
         int stock = good.getStock();
         stock = stock + num;
+        System.out.println("++++++" + stock);
         good.setStock(stock);
         super.update(good);
     }

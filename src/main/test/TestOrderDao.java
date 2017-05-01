@@ -52,7 +52,7 @@ public class TestOrderDao extends BaseTest {
     public void testFindOrder() {
         SystemContext.setPageSize(15);
         SystemContext.setOffset(0);
-        Pager<Order> orderPager = orderDao.find(5, 1);
+        Pager<Order> orderPager = orderDao.find("", 1);
         List<Order> datas = orderPager.getDatas();
         for (Order order : datas) {
             System.out.println(order.getAddress().getAddress());

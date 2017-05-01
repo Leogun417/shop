@@ -23,6 +23,7 @@
             <td align="center">支付时间</td>
             <td align="center">发货时间</td>
             <td align="center">收货时间</td>
+            <td align="center">操　　作</td>
         </tr>
         <c:forEach items="${orderPager.datas}" var="order">
             <tr>
@@ -44,12 +45,25 @@
                 </c:if>
 
                 <c:if test="${empty order.confirmDate}">
-                    <td align="center">未收货</td>
+                    <c:if test="${order.status ne 3}">
+                        <td align="center">未收货</td>
+                    </c:if>
+                    <c:if test="${order.status eq 3}">
+                        <td align="center"><a href="order.do?method=confirmReceive&orderId=${order.id}">确认收货</a></td>
+                    </c:if>
                 </c:if>
                 <c:if test="${not empty order.confirmDate}">
                     <td align="center"><fmt:formatDate value="${order.confirmDate}"
                                                        pattern="yyyy-MM-dd HH:mm"/></td>
                 </c:if>
+                <td align="center">
+                    <c:if test="${order.status eq 1}">
+                        <a href="order.do?method=deleteOrder&orderId=${order.id}">删　除</a>
+                    </c:if>
+                    <c:if test="${order.status ne 1}">
+                        删　除
+                    </c:if>
+                </td>
             </tr>
         </c:forEach>
     </table>

@@ -11,6 +11,9 @@ import com.study.shop.model.User;
 public interface IOrderDao {
     void add(User user, int addressId, Order order);
     void addToCart(GoodInCart goodInCart);
-    Pager<Order> find(int userId, int orderStatus);
+    Pager<Order> find(String name, int orderStatus);
     Order loadById(int id);
+    void update(Order order);
+    void delete(int id);
+    void deleteFromCart(int orderId);
 }

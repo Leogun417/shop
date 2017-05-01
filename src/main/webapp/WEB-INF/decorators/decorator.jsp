@@ -32,6 +32,7 @@
     <a href="user.do?method=userList">用户管理</a>&nbsp;&nbsp;
     <a href="category.do?method=categoryList">商品类别管理</a>&nbsp;&nbsp;
     <a href="good.do?method=goodsList">商品管理</a>&nbsp;&nbsp;
+    <a href="order.do?method=manageOrdersPage">顾客订单管理</a>&nbsp;&nbsp;
     <a href="user.do?method=logout">退出</a>&nbsp;&nbsp;
 </c:if>
 <hr/>

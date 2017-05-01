@@ -40,7 +40,7 @@ public class GoodInCart {
     }
 
     public void setGoodId(int goodId) {
-        this.goodId = goodId;
+		this.goodId = goodId;
     }
 
     public int getNumber() {

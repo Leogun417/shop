@@ -146,7 +146,8 @@ public class GoodServlet extends BaseServlet {
     public String addStock(HttpServletRequest req, HttpServletResponse res) {
         String id = req.getParameter("id");
         String num = req.getParameter("num");
-        if (id != null && num != null && id.equals("") && num.equals("")) {
+        System.out.println("true");
+        if (id != null && num != null && !id.equals("") && !num.equals("")) {
             goodDao.addStock(Integer.parseInt(id), Integer.parseInt(num));
         }
         return BaseServlet.redirect + "good.do?method=goodsList";
