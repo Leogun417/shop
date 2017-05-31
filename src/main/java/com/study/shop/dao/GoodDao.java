@@ -4,6 +4,7 @@ import com.study.shop.model.*;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by 傲然 on 2017/2/21.
@@ -45,15 +46,15 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
 
     public Pager<Good> find(int categoryId, int status, String goodName) {
         HashMap<String, Object> params = new HashMap<String, Object>();
-        if (categoryId > 0) {
-            params.put("categoryId", categoryId);
-        }
-        if (status == 0 || status == 1) {
-            params.put("status", status);
-        }
-        if (goodName != null && "".equals(goodName)) {
+
+        params.put("categoryId", categoryId);
+
+        params.put("status", status);
+
+        if (goodName != null && !goodName.equals("")) {
             params.put("name", "%" + goodName + "%");
         }
+
         Pager<Good> goodPager = super.find(Good.class.getName() + ".find", params);
         return goodPager;
     }
@@ -93,5 +94,26 @@ public class GoodDao extends BaseDao<Good> implements IGoodDao {
             good.setStock(stock);
             super.update(good);
         }
+    }
+
+    @Override
+    public void updatePriceByCategory(double ratio, int constraint, String constraintName) {
+        Map<String, Object> params = new HashMap<>();
+        params.put("ratio", ratio);
+        params.put("constraint", constraint);
+        params.put("constraintName", constraint);
+        super.updateBy(Good.class.getName() + ".updateBy", params);
+    }
+
+    @Override
+    public void addNotice(Notice notice) {
+        super.addNotice(Good.class.getName() + ".addNotice", notice);
+    }
+
+    @Override
+    public Notice findNotice(String title) {
+        HashMap<Object, Object> params = new HashMap<>();
+        params.put("title", title);
+        return super.findNotice(Good.class.getName() + ".findNotice", params);
     }
 }

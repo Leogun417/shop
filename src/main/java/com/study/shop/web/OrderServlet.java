@@ -36,6 +36,7 @@ public class OrderServlet extends BaseServlet {
     @Authority("user")
     public String addToCart(HttpServletRequest req, HttpServletResponse res) {
         String goodId = req.getParameter("goodId");
+        String from = req.getParameter("from");
         ShopCart shopCart = (ShopCart) req.getSession(true).getAttribute("shopCart");
         if (shopCart == null) {
             shopCart = new ShopCart();
@@ -49,7 +50,11 @@ public class OrderServlet extends BaseServlet {
                 return "errors.jsp";
             }
         }
-        return BaseServlet.redirect + "good.do?method=showGoodPage&id=" + goodId;
+        if (from.equals("showGood")) {
+            return BaseServlet.redirect + "good.do?method=showGoodPage&id=" + goodId;
+        } else {
+            return BaseServlet.redirect + "good.do?method=goodsPage";
+        }
     }
 
     @Authority("user")

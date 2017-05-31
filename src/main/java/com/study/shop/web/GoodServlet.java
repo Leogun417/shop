@@ -31,14 +31,54 @@ public class GoodServlet extends BaseServlet {
 
     @Authority("all")
     public String goodsPage(HttpServletRequest req, HttpServletResponse res) {
-        //TODO 商品展示
+        int categoryId = 0;
+        String scId = req.getParameter("categoryId");
+        String goodName = req.getParameter("goodName");
+        Notice free = goodDao.findNotice("free");
+        req.setAttribute("notice", free.getContent());
+        if (goodName == null) {
+            goodName = "";
+        }
+        if (scId != null) {
+            categoryId = Integer.parseInt(scId);
+        }
+
+        Pager<Good> goodPager = goodDao.find(categoryId, 1, goodName);
+        List<Category> list = categoryDao.list("");
+        req.setAttribute("categoryList",list);
+
+        req.setAttribute("goodPager", goodPager);
         return "goodsPage.jsp";
     }
 
     public String goodsList(HttpServletRequest req, HttpServletResponse res) {
-        Pager<Good> goodPager = goodDao.find(0, -1, "");
+        int categoryId = 0;
+        String scId = req.getParameter("categoryId");
+        String goodName = req.getParameter("goodName");
+        if (goodName == null) {
+            goodName = "";
+        }
+        if (scId != null) {
+            categoryId = Integer.parseInt(scId);
+        }
+        Pager<Good> goodPager = goodDao.find(categoryId, -1, goodName);
         req.setAttribute("goodPager", goodPager);
+        List<Category> list = categoryDao.list("");
+        req.setAttribute("categoryList",list);
         return "goodsList.jsp";
+    }
+
+    public String addNoticePage(HttpServletRequest req, HttpServletResponse res) {
+        return "addNotice.jsp";
+    }
+
+    public String addNotice(HttpServletRequest req, HttpServletResponse res) {
+        String content = req.getParameter("notice");
+        Notice notice = new Notice();
+        notice.setContent(content);
+        notice.setTitle("free");
+        goodDao.addNotice(notice);
+        return BaseServlet.redirect + "good.do?method=goodsPage";
     }
 
     public String addGoodPage(HttpServletRequest req, HttpServletResponse res) {
@@ -127,6 +167,18 @@ public class GoodServlet extends BaseServlet {
             }
         }
         return BaseServlet.redirect + "good.do?method=goodsList";
+    }
+
+    public String updateGoodByCategory(HttpServletRequest req, HttpServletResponse res) {
+        String categoryId = req.getParameter("categoryId");
+        String ratio = req.getParameter("ratio");
+        goodDao.updatePriceByCategory(Double.parseDouble(ratio), Integer.parseInt(categoryId), "category_id");
+        return BaseServlet.redirect + "good.do?method=goodsList";
+    }
+
+    public String updateByCategoryPage(HttpServletRequest req, HttpServletResponse res) {
+        req.setAttribute("categoryId", req.getParameter("categoryId"));
+        return "updateGoodByCategory.jsp";
     }
 
     public String changeGoodStatus(HttpServletRequest req, HttpServletResponse res) {

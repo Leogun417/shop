@@ -14,51 +14,54 @@
     <schema id="8" parent="1" name="test"/>
     <schema id="9" parent="1" name="world"/>
     <schema id="10" parent="1" name="minimall"/>
-    <table id="11" parent="2" name="file"/>
-    <table id="12" parent="2" name="user"/>
-    <column id="13" parent="11" name="fileId">
+    <schema id="11" parent="1" name="blog">
+      <Current>1</Current>
+    </schema>
+    <table id="12" parent="2" name="file"/>
+    <table id="13" parent="2" name="user"/>
+    <column id="14" parent="12" name="fileId">
       <Position>1</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="14" parent="11" name="ownerName">
+    <column id="15" parent="12" name="ownerName">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="15" parent="11" name="fileName">
+    <column id="16" parent="12" name="fileName">
       <Position>3</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <column id="16" parent="11" name="fileUploadDate">
+    <column id="17" parent="12" name="fileUploadDate">
       <Position>4</Position>
       <DataType>varchar(32)|0</DataType>
     </column>
-    <key id="17" parent="11" name="PRIMARY">
+    <key id="18" parent="12" name="PRIMARY">
       <ColNames>fileId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="18" parent="12" name="userId">
+    <column id="19" parent="13" name="userId">
       <Position>1</Position>
       <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="19" parent="12" name="userName">
+    <column id="20" parent="13" name="userName">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
-    <column id="20" parent="12" name="userPassWord">
+    <column id="21" parent="13" name="userPassWord">
       <Position>3</Position>
       <DataType>varchar(32)|0</DataType>
     </column>
-    <column id="21" parent="12" name="registDate">
+    <column id="22" parent="13" name="registDate">
       <Position>4</Position>
       <DataType>varchar(32)|0</DataType>
     </column>
-    <key id="22" parent="12" name="PRIMARY">
+    <key id="23" parent="13" name="PRIMARY">
       <ColNames>userId</ColNames>
       <Primary>1</Primary>
     </key>

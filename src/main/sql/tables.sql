@@ -99,12 +99,18 @@ INSERT INTO t_user (username, password, nickname, type) VALUES
   ('kongming@163.com', '123456', '诸葛亮', 0),
   ('qingyunian@qq.com', '123456', '范闲', 0),
   ('qingmei@qq.com', '123456', '五竹', 1);
-ALTER TABLE t_good
-  CHANGE status good_status INT;
+
 SELECT *
 FROM t_good;
 SELECT *
-FROM t_order;
-DELETE FROM t_good_in_cart_order;
+FROM t_notice;
+DELETE FROM t_good WHERE id=30;
 
+CREATE TABLE t_notice(
+  id Int PRIMARY KEY AUTO_INCREMENT,
+Title VARCHAR(10) not null,
+Content TEXT not null,
+Date DATETIME
+);
 
+select * from t_notice WHERE Title="free" order by id desc LIMIT 1;

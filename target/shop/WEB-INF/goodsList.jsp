@@ -12,6 +12,11 @@
     <title>商品管理</title>
 </head>
 <body>
+<div align="center">
+    <c:forEach items="${categoryList}" var="category">
+        <a href="good.do?method=goodsList&categoryId=${category.id}" class="category">${category.name}</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </c:forEach>
+</div>
 <a href="good.do?method=addGoodPage">点击添加商品</a>
 <div align="center">
     <h1>商品管理</h1>
@@ -30,7 +35,7 @@
             <tr>
                 <td align="center"><img src="<%=request.getContextPath()%>/upload/${good.img}" width="60" height="80"></td>
                 <td align="center"><a href="good.do?method=showGoodPage&id=${good.id}">${good.name}</a></td>
-                <td align="center">${good.category.name}</td>
+                <td align="center"><a href="good.do?method=updateByCategoryPage&categoryId=${good.category.id}">${good.category.name}</a></td>
                 <td align="center">${good.price}</td>
                 <td align="center">${good.stock}　<a href="good.do?method=addStockPage&id=${good.id}">增加</a> </td>
                 <td align="center">

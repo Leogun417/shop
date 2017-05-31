@@ -1,5 +1,6 @@
 package com.study.shop.dao;
 
+import com.study.shop.model.Notice;
 import com.study.shop.model.Pager;
 import com.study.shop.model.SystemContext;
 import com.study.shop.model.User;
@@ -8,6 +9,7 @@ import com.study.shop.util.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
 
 import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -30,6 +32,35 @@ public class BaseDao<T> {
         } finally {
             MyBatisUtil.closeSession(session);
         }
+    }
+
+    public void addNotice(String sql, Notice notice) {
+        SqlSession session = null;
+        try {
+            session = MyBatisUtil.getSession();
+            session.insert(sql, notice);
+            session.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.rollback();
+        } finally {
+            MyBatisUtil.closeSession(session);
+        }
+    }
+
+    public Notice findNotice(String sql, Map params) {
+        SqlSession session = null;
+        Notice notice = null;
+        try {
+            session = MyBatisUtil.getSession();
+            notice = session.selectOne(sql, params);
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.rollback();
+        } finally {
+            MyBatisUtil.closeSession(session);
+        }
+        return notice;
     }
 
     public void delete(Class<T> cls, int id) {
@@ -130,5 +161,19 @@ public class BaseDao<T> {
             MyBatisUtil.closeSession(session);
         }
         return objList;
+    }
+
+    public void updateBy(String sql, Map params) {
+        SqlSession session = null;
+        try {
+            session = MyBatisUtil.getSession();
+            session.update(sql, params);
+            session.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.rollback();
+        } finally {
+            MyBatisUtil.closeSession(session);
+        }
     }
 }

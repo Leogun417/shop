@@ -22,7 +22,7 @@
                 <td>已下架</td>
             </c:if>
             <c:if test="${good.status eq 1}">
-                <td colspan="2" align="right"><a href="order.do?method=addToCart&goodId=${good.id}">加入购物车</a></td>
+                <td colspan="2" align="right"><a href="order.do?from=showGood&method=addToCart&goodId=${good.id}">加入购物车</a></td>
             </c:if>
         </tr>
         <tr>

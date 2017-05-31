@@ -11,6 +11,6 @@
     <title></title>
 </head>
 <body>
-
+<% request.getRequestDispatcher("good.do?method=goodsPage").forward(request, response);%>
 </body>
 </html>

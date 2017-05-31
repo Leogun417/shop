@@ -2,6 +2,7 @@ package com.study.shop.dao;
 
 import com.study.shop.model.Category;
 import com.study.shop.model.Good;
+import com.study.shop.model.Notice;
 import com.study.shop.model.Pager;
 
 /**
@@ -20,4 +21,7 @@ public interface IGoodDao {
     void changeStatus(int id);
     void addStock(int id, int num);
     void decreaseStock(int id, int num);
+    void updatePriceByCategory(double ratio, int constraint, String constraintName);
+    void addNotice(Notice notice);
+    Notice findNotice(String title);
 }
